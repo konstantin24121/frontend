@@ -1,0 +1,33 @@
+default:
+   - 'shell:def'
+scompile:
+   - 'sass'
+   - 'jadephp'
+   - 'coffee'
+minify: 
+   - 'clean'
+   - 'cmq'
+   - 'cssmin'
+   - 'uglify'
+deploy: 
+   - 'ftp_push'
+imagecreate: 
+   - 'retinafy'
+   - 'imagemin:staticly'
+build:
+   - 'bower'
+   - 'shell:installBower'
+   - 'jadephp'
+   - 'sass'
+   - 'less'
+   - 'clean:minified'
+   - 'cmq'
+   - 'cssmin'
+   - 'favicons'
+   - 'font_loader'
+   - 'coffee'
+   - 'uglify:js'
+   - 'copy:libs'
+   - 'uglify:libs'
+   - 'retinafy'
+   - 'imagemin:staticly'

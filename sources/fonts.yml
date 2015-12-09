@@ -1,0 +1,9 @@
+roboto:
+  bold: all
+  black: 
+    - eot
+    - ttf
+    - svf
+  regular: woff
+jikharev: all
+panton: all

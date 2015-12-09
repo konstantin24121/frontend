@@ -1,0 +1,21 @@
+{
+  "name": "Viikset",
+  "version": "0.8.5",
+  "description": "KonstantinViikset",
+  "authors": [
+    "konstantin24121@gmail.com"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "web/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "susy": "~2.2.7"
+  }
+}

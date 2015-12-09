@@ -1,0 +1,23 @@
+{
+  "name": "Viikset",
+  "version": "0.8.5",
+  "description": "KonstantinViikset",
+  "authors": [
+    "konstantin24121@gmail.com"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "web/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "~2.2.6",
+    "compass-breakpoint": "at-import/breakpoint#~2.6.1",
+    "bourbon": "~4.2.5",
+    "normalize-scss": "appleboy/normalize.scss#~3.0.3"
+  }
+}

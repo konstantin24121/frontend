@@ -1,0 +1,6 @@
+/.sass-cache/*
+/bower/*
+/node_modules/*
+/web/*
+/views/*
+.ftpauth
