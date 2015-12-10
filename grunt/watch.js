@@ -4,16 +4,16 @@ module.exports = {
     },
     php: {
         files: ['sources/jade/**/*.jade'],
-        tasks: ['jadephp'],
+        tasks: ['newer:jadephp'],
     },
     css: {
         files: ['sources/sass/**/*.scss'],
-        tasks: ['sass'],
+        tasks: ['newer:sass'],
     },
     //alternative preprocessor
     css_alt: {
         files: ['sources/less/**/*.less'],
-        tasks: ['less'],
+        tasks: ['newer:less'],
     },
     favicon: {
         files: ['sources/favicon.*'],
@@ -25,11 +25,11 @@ module.exports = {
     },
     js: {
         files: ['sources/coffee/**/*.coffee'],
-        tasks: ['coffee'],
+        tasks: ['newer:lcoffee'],
     },
     image: {
         files: ['sources/images/*.{png,gif,jpg}'],
-        tasks: ['retinafy','imagemin:staticly'],
+        tasks: ['newer:retinafy','newer:imagemin:staticly'],
     },
     
     

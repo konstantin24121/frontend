@@ -25,6 +25,8 @@
     "grunt-font-loader": "^0.1.0",
     "grunt-ftp-push": "^0.3.6",
     "grunt-jade-php": "^0.1.0",
+    "grunt-newer": "^1.1.1",
+    "grunt-pagespeed": "^2.0.0",
     "grunt-retinafy": "^0.1.5",
     "grunt-sass": "^1.1.0-beta",
     "grunt-shell": "^1.1.2",
@@ -40,11 +42,11 @@
     "grunt-favicons": "^0.7.0",
     "grunt-contrib-imagemin": "^1.0.0",
     "grunt-contrib-less": "^1.0.1",
-    "grunt-sass": "^1.1.0-beta"
+    "grunt-sass": "^1.1.0-beta",
+    "grunt-newer": "^1.1.1"
   },
   "removeDependencies": {
     "grunt-contrib-compass": "^1.0.4",
-    "grunt-newer": "^1.1.1",
     "grunt-notify": "^0.4.1",
     "grunt-periodic": "^1.0.0",
     "grunt-spritesmith": "^5.0.0"

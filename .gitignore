@@ -1,4 +1,5 @@
 /.sass-cache/*
+/.temp/*
 /bower/*
 /node_modules/*
 /web/*
