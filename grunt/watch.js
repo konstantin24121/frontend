@@ -8,12 +8,12 @@ module.exports = {
     },
     css: {
         files: ['sources/sass/**/*.scss'],
-        tasks: ['newer:sass'],
+        tasks: ['sass'],
     },
     //alternative preprocessor
     css_alt: {
         files: ['sources/less/**/*.less'],
-        tasks: ['newer:less'],
+        tasks: ['less'],
     },
     favicon: {
         files: ['sources/favicon.*'],
@@ -25,7 +25,7 @@ module.exports = {
     },
     js: {
         files: ['sources/coffee/**/*.coffee'],
-        tasks: ['newer:lcoffee'],
+        tasks: ['newer:coffee'],
     },
     image: {
         files: ['sources/images/*.{png,gif,jpg}'],
