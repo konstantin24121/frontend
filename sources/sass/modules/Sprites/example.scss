@@ -1,0 +1,24 @@
+@mixin se {
+	display: inline-block;
+	background-image: url(../sprites/example.png);
+	background-repeat: no-repeat;
+	width: 256px;
+	height: 256px;
+	background-size:1024px 1024px;
+	@include retina{
+		background-image: url(../sprites/example@2x.png);
+	}
+}
+@mixin se-ceres{@include se;background-position: -256px 0px;width: 256px;height: 256px;}
+@mixin se-earth{@include se;background-position: 0px -512px;width: 256px;height: 256px;}
+@mixin se-eris{@include se;background-position: 0px -256px;width: 256px;height: 256px;}
+@mixin se-jupiter{@include se;background-position: -256px -256px;width: 256px;height: 256px;}
+@mixin se-mars{@include se;background-position: -512px 0px;width: 256px;height: 256px;}
+@mixin se-mercury{@include se;background-position: -512px -256px;width: 256px;height: 256px;}
+@mixin se-moon{@include se;background-position: 0px 0px;width: 256px;height: 256px;}
+@mixin se-neptune{@include se;background-position: -256px -512px;width: 256px;height: 256px;}
+@mixin se-pluto{@include se;background-position: -512px -512px;width: 256px;height: 256px;}
+@mixin se-saturn{@include se;background-position: -768px 0px;width: 256px;height: 256px;}
+@mixin se-sun{@include se;background-position: -768px -256px;width: 256px;height: 256px;}
+@mixin se-uranus{@include se;background-position: -768px -512px;width: 256px;height: 256px;}
+@mixin se-venus{@include se;background-position: 0px -768px;width: 256px;height: 256px;}

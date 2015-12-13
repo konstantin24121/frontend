@@ -29,6 +29,7 @@
     "grunt-pagespeed": "~0.4.1",
     "grunt-retinafy": "^0.1.5",
     "grunt-sass": "^1.1.0-beta",
+    "grunt-spritesmith": "^5.0.0",
     "grunt-shell": "^1.1.2",
     "load-grunt-config": "^0.17.2",
     "time-grunt": "^1.2.1"
@@ -43,14 +44,13 @@
     "grunt-contrib-imagemin": "^1.0.0",
     "grunt-contrib-less": "^1.0.1",
     "grunt-sass": "^1.1.0-beta",
+    "grunt-spritesmith": "^5.0.0",
     "grunt-newer": "^1.1.1"
   },
   "removeDependencies": {
     "grunt-contrib-compass": "^1.0.4",
     "grunt-notify": "^0.4.1",
     "grunt-periodic": "^1.0.0",
-    "grunt-pagespeed": "~0.4.1",
-    "grunt-spritesmith": "^5.0.0"
-
+    "grunt-pagespeed": "~0.4.1"
   }
 }

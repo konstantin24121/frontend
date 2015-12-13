@@ -21,5 +21,16 @@ module.exports = {
             src: ['web/img/*.{png,gif,jpg}'],
             dest: 'web/img'
         }]
+    },
+    sprite: {
+    	options:{
+    		optimizationLevel: 1
+    	},
+        files: [{
+        	expand: true, 
+        	cwd: '.temp/icons/',
+            src: [' **/*.{png,gif,jpg}'],
+            dest: '.temp/icons'
+        }]
     }
 }

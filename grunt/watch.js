@@ -31,6 +31,10 @@ module.exports = {
         files: ['sources/images/*.{png,gif,jpg}'],
         tasks: ['newer:retinafy','newer:imagemin:staticly'],
     },
+    sprites: {
+        files: ['sources/icons/*.{png,gif,jpg}'],
+        tasks: ['newer:retinafy','newer:imagemin:sprite', 'sprite'],
+    },
     
     
     configFiles: {

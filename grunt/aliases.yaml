@@ -9,12 +9,12 @@ minify:
    - 'cmq'
    - 'cssmin'
    - 'uglify'
-   - 'retinafy'
+   - 'retinafy:images'
    - 'imagemin:staticly'
 deploy: 
    - 'ftp_push'
 imagecreate: 
-   - 'retinafy'
+   - 'retinafy:images'
    - 'imagemin:staticly'
 build:
    - 'bower'
@@ -31,8 +31,12 @@ build:
    - 'uglify:js'
    - 'copy:libs'
    - 'uglify:libs'
-   - 'retinafy'
+   - 'retinafy:images'
    - 'imagemin:staticly'
 speedtest:
    - 'shell:speedDesktope'
    - 'shell:speedMobile'
+spritecreate: 
+   - 'retinafy:icons'
+   - 'imagemin:sprite'
+   - 'sprite'
