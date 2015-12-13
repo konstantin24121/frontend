@@ -26,7 +26,7 @@
     "grunt-ftp-push": "^0.3.6",
     "grunt-jade-php": "^0.1.0",
     "grunt-newer": "^1.1.1",
-    "grunt-pagespeed": "^2.0.0",
+    "grunt-pagespeed": "~0.4.1",
     "grunt-retinafy": "^0.1.5",
     "grunt-sass": "^1.1.0-beta",
     "grunt-shell": "^1.1.2",
@@ -49,6 +49,8 @@
     "grunt-contrib-compass": "^1.0.4",
     "grunt-notify": "^0.4.1",
     "grunt-periodic": "^1.0.0",
+    "grunt-pagespeed": "~0.4.1",
     "grunt-spritesmith": "^5.0.0"
+
   }
 }

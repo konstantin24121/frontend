@@ -1,3 +1,32 @@
+#Команды#
+
+Компиляция статики, выполнение всех заданий watch один раз. довольно бесполезно
+
+`grunt scompile`
+
+Минимизация всего и вся
+
+`grunt minify`
+
+Создание изображений и минификация
+
+`grunt imagecreate`
+
+Билд скрипт
+
+`grunt build`
+
+Тест Google Page speed
+
+`grunt speedtest`
+
+Запуск watch
+
+`grunt watch --mode=compile`
+
+
+
+
 ##JadePhp##
 
 Чтобы избавится от *htmlspecialchars* при использовании оператора **=** коментим в файле
@@ -29,3 +58,10 @@
 `"sync-exec": "^0.4.0" -> "sync-exec": "^0.6.0"`
 
 после чего в этой паке запускаем npm install. Теперь grunt favicons заработает.
+
+
+##Page speed##
+
+Чтобы получать инфу об оптимизации переписать domain в файле grunt/shell. И не забыть установить глобально psi 
+  
+`npm install --g psi`

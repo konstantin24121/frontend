@@ -4,11 +4,13 @@ scompile:
    - 'sass'
    - 'jadephp'
    - 'coffee'
-minify: 
+minify:
    - 'clean'
    - 'cmq'
    - 'cssmin'
    - 'uglify'
+   - 'retinafy'
+   - 'imagemin:staticly'
 deploy: 
    - 'ftp_push'
 imagecreate: 
@@ -31,3 +33,6 @@ build:
    - 'uglify:libs'
    - 'retinafy'
    - 'imagemin:staticly'
+speedtest:
+   - 'shell:speedDesktope'
+   - 'shell:speedMobile'

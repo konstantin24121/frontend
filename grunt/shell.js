@@ -1,3 +1,5 @@
+var domain = 'four.dcmr.ru';
+
 module.exports = {
 	def:{
 		command: function () {
@@ -21,5 +23,11 @@ module.exports = {
                 cwd: 'sources'
             }
         }
+    },
+    speedDesktope:{
+    	command: 'psi '+ domain + ' --strategy=desktop --optimized --threshold=85'
+    },
+    speedMobile:{
+    	command: 'psi '+ domain + ' --strategy=mobile --optimized --threshold=85'
     }
 }
