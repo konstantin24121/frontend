@@ -21,7 +21,7 @@ module.exports = {
     },
     fonts: {
         files: ['sources/fonts.yml'],
-        tasks: ['font_loader'],
+        tasks: ['font_loader:get'],
     },
     js: {
         files: ['sources/coffee/**/*.coffee'],

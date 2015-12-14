@@ -26,7 +26,7 @@ build:
    - 'cmq'
    - 'cssmin'
    - 'favicons'
-   - 'font_loader'
+   - 'font_loader:get'
    - 'coffee'
    - 'uglify:js'
    - 'copy:libs'
@@ -36,7 +36,7 @@ build:
 speedtest:
    - 'shell:speedDesktope'
    - 'shell:speedMobile'
-spritecreate: 
+spritecreate:
    - 'retinafy:icons'
    - 'imagemin:sprite'
    - 'sprite'
