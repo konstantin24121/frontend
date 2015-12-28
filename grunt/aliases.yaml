@@ -36,6 +36,7 @@ build:
    - 'retinafy:icons'
    - 'sprite'
    - 'imagemin:sprite'
+   - 'svgmin'
 speedtest:
    - 'shell:speedDesktope'
    - 'shell:speedMobile'

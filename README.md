@@ -84,3 +84,39 @@
 Чтобы получать инфу об оптимизации переписать domain в файле grunt/shell. И не забыть установить глобально psi 
   
 `npm install --g psi`
+
+
+#Что есть в сборке#
+
+- [Bower task](https://github.com/yatskevich/grunt-bower-task) для установки bower-пакетов 
+- [Shell](https://github.com/sindresorhus/grunt-shell) для работы с консолью, и консольными командами
+- [jadePhp](https://github.com/viniwrubleski/jade-php) для компиляции Jade в Php
+- [SASS](https://github.com/gruntjs/grunt-contrib-sass) для компиляции SASS в CSS
+- [Less](https://github.com/gruntjs/grunt-contrib-less) для компиляции LESS в CSS
+- [Clean](https://github.com/gruntjs/grunt-contrib-clean) для удаления файлов
+- [Cmq](https://github.com/buildingblocks/grunt-combine-media-queries) для сборки медиазапросов
+- [Cssmin](https://github.com/gruntjs/grunt-contrib-cssmin) для минификации CSS
+- [Favicons](https://github.com/gleero/grunt-favicons) для создания favicon'ок
+- [FontLoader](https://github.com/konstantin24121/grunt-font-loader) для загрузки шрифтов с ftp
+- [Coffee](https://github.com/gruntjs/grunt-contrib-coffee) для компиляции CoffeeScript в JS
+- [Uglify](https://github.com/gruntjs/grunt-contrib-uglify) для минификации JS файлов
+- [Retinafy](https://github.com/JrSchild/grunt-retinafy) для создания ретина-изображений
+- [Spritesmith](https://github.com/Ensighten/grunt-spritesmith) для создания спрайтов и стилей для них
+- [Imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) для минификации IMG и PNG
+- [Watch](https://github.com/gruntjs/grunt-contrib-watch) для livereload
+- [Newer](https://github.com/tschaub/grunt-newer) для отбрасывания из выборок файлов, которые не изменились
+- [Copy](https://github.com/gruntjs/grunt-contrib-copy) для копирования файлов
+- [LoadConfig](https://github.com/firstandthird/load-grunt-config) для разбиения настроек тасков по файлам
+- [Time](https://github.com/sindresorhus/time-grunt) время выполнения заданий
+- [Svgmin](https://github.com/sindresorhus/grunt-svgmin) для минификации векторной графики
+
+###Что есть, но пока что не используется###
+- [FtpPush](https://github.com/Robert-W/grunt-ftp-push) будет использоваться для деплой-скрипта
+
+###Depricated###
+Либо не используется, либо пока не найдено приминения
+
+- [Compass](https://github.com/gruntjs/grunt-contrib-compass) старый компилятор и фрейм Compass для SASS. Исключен из за высокого времени на компиляцию
+- [Notify](https://github.com/dylang/grunt-notify) подымает сообщения, с помощью Growl'a. Пищало, лишнее время на загрузку таска. Не нужно, если держать окно консоли поверх остальных
+- [Periodic](https://github.com/bealearts/grunt-periodic) периодический запуск заданий, оказалось не то что надо, так как занимается лишь повторением задач, в случае если они не были запущены ни разу за указанный период. Практического применения не найдено
+- [Pagespeed](https://github.com/jrcryer/grunt-pagespeed) проходит проверку в Google insight pageSpeed. Пока не работает и зависает, пока что не применимо.
