@@ -27,10 +27,10 @@ module.exports = {
     		optimizationLevel: 1
     	},
         files: [{
-        	expand: true, 
-        	cwd: '.temp/icons/',
-            src: [' **/*.{png,gif,jpg}'],
-            dest: '.temp/icons'
+        	flatten: true,
+            expand: true, 
+            src: ['web/sprites/*.{png,gif,jpg}'],
+            dest: 'web/sprites'
         }]
     }
 }

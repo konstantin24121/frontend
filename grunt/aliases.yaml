@@ -9,8 +9,8 @@ minify:
    - 'cmq'
    - 'cssmin'
    - 'uglify'
-   - 'retinafy:images'
    - 'imagemin:staticly'
+   - 'imagemin:sprite'
 deploy: 
    - 'ftp_push'
 imagecreate: 
@@ -33,10 +33,13 @@ build:
    - 'uglify:libs'
    - 'retinafy:images'
    - 'imagemin:staticly'
+   - 'retinafy:icons'
+   - 'sprite'
+   - 'imagemin:sprite'
 speedtest:
    - 'shell:speedDesktope'
    - 'shell:speedMobile'
 spritecreate:
    - 'retinafy:icons'
-   - 'imagemin:sprite'
    - 'sprite'
+   - 'imagemin:sprite'

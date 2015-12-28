@@ -11,10 +11,10 @@ module.exports = {
         tasks: ['sass'],
     },
     //alternative preprocessor
-    css_alt: {
-        files: ['sources/less/**/*.less'],
-        tasks: ['less'],
-    },
+    // css_alt: {
+    //     files: ['sources/less/**/*.less'],
+    //     tasks: ['less'],
+    // },
     favicon: {
         files: ['sources/favicon.*'],
         tasks: ['favicons'],
@@ -35,12 +35,16 @@ module.exports = {
         files: ['sources/icons/*.{png,gif,jpg}'],
         tasks: ['newer:retinafy','newer:imagemin:sprite', 'sprite'],
     },
+    svg: {
+        files: ['sources/vector/*.{svg}'],
+        tasks: ['newer:svgmin'],
+    },
     
     
-    configFiles: {
-        files: ['web/svg/**/*.svg'],
-        options: {
-            reload: true
-        }
-    }
+    // configFiles: {
+    //     files: ['web/svg/**/*.svg'],
+    //     options: {
+    //         reload: true
+    //     }
+    // }
 }

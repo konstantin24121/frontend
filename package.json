@@ -28,6 +28,7 @@
     "grunt-newer": "^1.1.1",
     "grunt-pagespeed": "~0.4.1",
     "grunt-retinafy": "^0.1.5",
+    "grunt-svgmin": "^3.1.0",
     "grunt-sass": "^1.1.0-beta",
     "grunt-spritesmith": "^5.0.0",
     "grunt-shell": "^1.1.2",
@@ -44,7 +45,15 @@
     "grunt-contrib-imagemin": "^1.0.0",
     "grunt-contrib-less": "^1.0.1",
     "grunt-sass": "^1.1.0-beta",
+    "grunt-svgmin": "^3.1.0",
     "grunt-spritesmith": "^5.0.0",
+    "grunt-newer": "^1.1.1"
+  },
+  "lightcompileDependencies": {
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jade-php": "^0.1.0",
+    "grunt-contrib-coffee": "^0.13.0",
+    "grunt-sass": "^1.1.0-beta",
     "grunt-newer": "^1.1.1"
   },
   "removeDependencies": {
