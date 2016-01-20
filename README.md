@@ -25,7 +25,11 @@
 
 `grunt build`
 
-######Тест Google Page speed######
+Для многоядерных
+
+`grunt buildcon`
+
+######Тест Page speed######
 
 `grunt speedtest`
 
@@ -86,6 +90,16 @@
 `npm install --g psi`
 
 
+##Perfbudget##
+
+Обязательно указать в package.json параметр domain 
+
+
+##Сoncurrent##
+
+В настройках указать число ядер. Ускоряет.
+
+
 #Что есть в сборке#
 
 - [Bower task](https://github.com/yatskevich/grunt-bower-task) для установки bower-пакетов 
@@ -95,6 +109,7 @@
 - [Less](https://github.com/gruntjs/grunt-contrib-less) для компиляции LESS в CSS
 - [Clean](https://github.com/gruntjs/grunt-contrib-clean) для удаления файлов
 - [Cmq](https://github.com/buildingblocks/grunt-combine-media-queries) для сборки медиазапросов
+- [Сoncurrent](hhttps://github.com/sindresorhus/grunt-concurrent) для ускорения сборки (только для многоядерных)
 - [Cssmin](https://github.com/gruntjs/grunt-contrib-cssmin) для минификации CSS
 - [Favicons](https://github.com/gleero/grunt-favicons) для создания favicon'ок
 - [FontLoader](https://github.com/konstantin24121/grunt-font-loader) для загрузки шрифтов с ftp
@@ -105,6 +120,7 @@
 - [Imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) для минификации IMG и PNG
 - [Watch](https://github.com/gruntjs/grunt-contrib-watch) для livereload
 - [Newer](https://github.com/tschaub/grunt-newer) для отбрасывания из выборок файлов, которые не изменились
+- [Perfbudget](https://github.com/tkadlec/grunt-perfbudget) тестируем скорость, альтернатива pagespeed, но круче
 - [Copy](https://github.com/gruntjs/grunt-contrib-copy) для копирования файлов
 - [LoadConfig](https://github.com/firstandthird/load-grunt-config) для разбиения настроек тасков по файлам
 - [Time](https://github.com/sindresorhus/time-grunt) время выполнения заданий
@@ -120,3 +136,5 @@
 - [Notify](https://github.com/dylang/grunt-notify) подымает сообщения, с помощью Growl'a. Пищало, лишнее время на загрузку таска. Не нужно, если держать окно консоли поверх остальных
 - [Periodic](https://github.com/bealearts/grunt-periodic) периодический запуск заданий, оказалось не то что надо, так как занимается лишь повторением задач, в случае если они не были запущены ни разу за указанный период. Практического применения не найдено
 - [Pagespeed](https://github.com/jrcryer/grunt-pagespeed) проходит проверку в Google insight pageSpeed. Пока не работает и зависает, пока что не применимо.
+- [Concat](https://github.com/gruntjs/grunt-contrib-concat) конкатенирует файлы, без надобности, теперь.
+- [HTML5 Manifest](https://github.com/gunta/grunt-manifest) для кеширования и оффлайн страниц, пока таких задач не возникало

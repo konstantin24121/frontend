@@ -1,6 +1,13 @@
+var package = require('./package.json');
+
+
 module.exports = function(grunt) {
 	var mode = grunt.option("mode") || 'dev';
-    require('time-grunt')(grunt);    
+	
+	global['domain'] = package.domain;
+    
+    require('time-grunt')(grunt);
+
     require('load-grunt-config')(grunt,{
         loadGruntTasks: {
             pattern: 'grunt-*',

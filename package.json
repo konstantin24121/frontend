@@ -1,7 +1,8 @@
 {
   "name": "viikset",
-  "version": "2.0.5",
+  "version": "0.2.6",
   "description": "VinstonWolf Grunt",
+  "domain": "five.dcmr.ru",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +14,7 @@
     "grunt": "^0.4.5",
     "grunt-bower-task": "^0.4.0",
     "grunt-combine-media-queries": "^1.0.19",
+    "grunt-concurrent": "^2.1.0",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-coffee": "^0.13.0",
     "grunt-contrib-copy": "^0.8.2",
@@ -26,11 +28,12 @@
     "grunt-ftp-push": "^0.3.6",
     "grunt-jade-php": "^0.1.0",
     "grunt-newer": "^1.1.1",
+    "grunt-perfbudget": "^0.1.8",
     "grunt-retinafy": "^0.1.5",
-    "grunt-svgmin": "^3.1.0",
     "grunt-sass": "^1.1.0-beta",
-    "grunt-spritesmith": "^5.0.0",
     "grunt-shell": "^1.1.2",
+    "grunt-spritesmith": "^5.0.0",
+    "grunt-svgmin": "^3.1.0",
     "load-grunt-config": "^0.17.2",
     "time-grunt": "^1.2.1"
   },

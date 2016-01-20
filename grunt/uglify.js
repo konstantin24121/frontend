@@ -9,7 +9,7 @@ module.exports =
             ext: '.min.js'
         }]
     },
-    components: {
+    libs: {
         files: [{
             expand: true,
             cwd: 'web/libs',

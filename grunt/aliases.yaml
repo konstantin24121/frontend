@@ -16,6 +16,14 @@ deploy:
 imagecreate: 
    - 'retinafy:images'
    - 'imagemin:staticly'
+speedtest:
+   - 'shell:speedDesktope'
+   - 'shell:speedMobile'
+   - 'perfbudget'
+spritecreate:
+   - 'retinafy:icons'
+   - 'sprite'
+   - 'imagemin:sprite'
 build:
    - 'bower'
    - 'shell:installBower'
@@ -37,10 +45,17 @@ build:
    - 'sprite'
    - 'imagemin:sprite'
    - 'svgmin'
-speedtest:
-   - 'shell:speedDesktope'
-   - 'shell:speedMobile'
-spritecreate:
-   - 'retinafy:icons'
-   - 'sprite'
-   - 'imagemin:sprite'
+buildcon:
+   - 'bower'
+   - 'shell:installBower'
+   - 'jadephp'
+   - 'sass'
+   - 'less'
+   - 'clean:minified'
+   - 'cmq'
+   - 'cssmin'
+   - 'coffee'
+   - 'uglify:js'
+   - 'copy:libs'
+   - 'uglify:libs'
+   - 'concurrent:big'
