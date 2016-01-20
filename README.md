@@ -109,7 +109,7 @@
 - [Less](https://github.com/gruntjs/grunt-contrib-less) для компиляции LESS в CSS
 - [Clean](https://github.com/gruntjs/grunt-contrib-clean) для удаления файлов
 - [Cmq](https://github.com/buildingblocks/grunt-combine-media-queries) для сборки медиазапросов
-- [Сoncurrent](hhttps://github.com/sindresorhus/grunt-concurrent) для ускорения сборки (только для многоядерных)
+- [Сoncurrent](https://github.com/sindresorhus/grunt-concurrent) для ускорения сборки (только для многоядерных)
 - [Cssmin](https://github.com/gruntjs/grunt-contrib-cssmin) для минификации CSS
 - [Favicons](https://github.com/gleero/grunt-favicons) для создания favicon'ок
 - [FontLoader](https://github.com/konstantin24121/grunt-font-loader) для загрузки шрифтов с ftp
