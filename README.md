@@ -17,8 +17,8 @@
 | Тест сайта на скорость и оптимальность                                                                         | grunt speedtest                 |
 | Запуск watch в обычном режиме, для мощных машин                                                                | grunt watch --mode=compile      |
 | Запуск watch в режиме экономии task'ов. В файле watch оставть только,php css js задания, остальное закоментить | grunt watch --mode=lightcompile |
-| Установка новых bower'ов, где {package} имя пакета                                                             | grunt shell:bi:{package}`       |
-| Удаление пакетов bower'ов, где {package} имя пакета                                                            | grunt shell:bu:{package}`       |
+| Установка новых bower'ов, где {package} имя пакета                                                             | grunt shell:bi:{package}        |
+| Удаление пакетов bower'ов, где {package} имя пакета                                                            | grunt shell:bu:{package}        |
 
 А для всего остального есть MasterCard
 
