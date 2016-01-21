@@ -1,5 +1,3 @@
-var domain = 'four.dcmr.ru';
-
 module.exports = {
 	def:{
 		command: function () {
@@ -14,7 +12,7 @@ module.exports = {
             }
         }
     },
-    b: {
+    bi: {
         command: function (pack) {
             return 'bower install -S ' + pack;
         },
@@ -24,10 +22,20 @@ module.exports = {
             }
         }
     },
+    bu: {
+        command: function (pack) {
+            return 'bower uninstall -S ' + pack;
+        },
+        options: {
+            execOptions: {
+                cwd: 'sources'
+            }
+        }
+    },
     speedDesktope:{
-    	command: 'psi '+ domain + ' --strategy=desktop --optimized --threshold=85'
+    	command: 'psi '+ global['domain'] + ' --strategy=desktop --optimized --threshold=85'
     },
     speedMobile:{
-    	command: 'psi '+ domain + ' --strategy=mobile --optimized --threshold=85'
+    	command: 'psi '+ global['domain'] + ' --strategy=mobile --optimized --threshold=85'
     }
 }

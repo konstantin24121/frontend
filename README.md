@@ -1,54 +1,28 @@
 1. npm i
 2. Правка favicons и phpJade
 3. grunt build
-
-#Команды#
 ----------
 
-######Компиляция статики, выполнение всех заданий watch один раз. довольно бесполезно######
+#Команды#
 
-`grunt scompile`
+| Описание                                                                                                       | Команды к консоли               |
+|----------------------------------------------------------------------------------------------------------------|---------------------------------|
+| Компиляция статики, выполнение всех заданий watch один раз. довольно бесполезно                                | grunt scompile                  |
+| Минимизация всего и вся                                                                                        | grunt minify                    |
+| Создание изображений и минификация                                                                             | grunt imagecreate               |
+| Создание спрайтов и минификация                                                                                | grunt spritecreate              |
+| Билд скрипт                                                                                                    | grunt build                     |
+| Билд скрипт для многоядерных (4 ядра), с паралелзьмом                                                          | grunt buildcon                  |
+| Тест сайта на скорость и оптимальность                                                                         | grunt speedtest                 |
+| Запуск watch в обычном режиме, для мощных машин                                                                | grunt watch --mode=compile      |
+| Запуск watch в режиме экономии task'ов. В файле watch оставть только,php css js задания, остальное закоментить | grunt watch --mode=lightcompile |
+| Установка новых bower'ов, где {package} имя пакета                                                             | grunt shell:bi:{package}`       |
+| Удаление пакетов bower'ов, где {package} имя пакета                                                            | grunt shell:bu:{package}`       |
 
-######Минимизация всего и вся######
-
-`grunt minify`
-
-######Создание изображений и минификация######
-
-`grunt imagecreate`
-
-######Создание спрайтов и минификация######
-
-`grunt spritecreate`
-
-######Билд скрипт######
-
-`grunt build`
-
-Для многоядерных
-
-`grunt buildcon`
-
-######Тест Page speed######
-
-`grunt speedtest`
-
-######Запуск watch######
-
-В обычном режиме, для мощных машин
-
-`grunt watch --mode=compile`
-
-В режиме экономии task'ов. В файле watch оставть только  php css js задания, остальное закоментить
-
-`grunt watch --mode=lightcompile`
-
-######Установка новых bower'ов######
-
-`grunt shell:b:{package}` где {package} имя пакета
+А для всего остального есть MasterCard
 
 
-#Как сделать пакеты нормальными#
+#Как сделать пакеты нормальными или если что-то пошло не так#
 
 ##JadePhp##
 
@@ -97,7 +71,11 @@
 
 ##Сoncurrent##
 
-В настройках указать число ядер. Ускоряет.
+В настройках указать число ядер. Ускоряет. Не использовать тем у кого меньше 4 ядер.
+
+##Bower через grunt##
+
+Напоминаю что этот плагин и команды устанавливают пакеты в папку web, пакеты для developa ставятся по классической схеме через bower
 
 
 #Что есть в сборке#
@@ -109,7 +87,6 @@
 - [Less](https://github.com/gruntjs/grunt-contrib-less) для компиляции LESS в CSS
 - [Clean](https://github.com/gruntjs/grunt-contrib-clean) для удаления файлов
 - [Cmq](https://github.com/buildingblocks/grunt-combine-media-queries) для сборки медиазапросов
-- [Сoncurrent](https://github.com/sindresorhus/grunt-concurrent) для ускорения сборки (только для многоядерных)
 - [Cssmin](https://github.com/gruntjs/grunt-contrib-cssmin) для минификации CSS
 - [Favicons](https://github.com/gleero/grunt-favicons) для создания favicon'ок
 - [FontLoader](https://github.com/konstantin24121/grunt-font-loader) для загрузки шрифтов с ftp
@@ -128,6 +105,7 @@
 
 ###Что есть, но пока что не используется###
 - [FtpPush](https://github.com/Robert-W/grunt-ftp-push) будет использоваться для деплой-скрипта
+- [Сoncurrent](https://github.com/sindresorhus/grunt-concurrent) Время билда должно быть весьма велико чтобы что то параллелить, сейчас такой надобности нету, наоборот рпоигрыш наблюдается. На многоядерных можно пользовать.
 
 ###Depricated###
 Либо не используется, либо пока не найдено приминения
