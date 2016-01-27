@@ -45,6 +45,7 @@ build:
    - 'sprite'
    - 'imagemin:sprite'
    - 'svgmin'
+   - 'copy:yiiB'
 buildcon:
    - 'bower'
    - 'shell:installBower'
@@ -59,3 +60,5 @@ buildcon:
    - 'copy:libs'
    - 'uglify:libs'
    - 'concurrent:big'
+   - 'svgmin'
+   - 'copy:yiiB'
