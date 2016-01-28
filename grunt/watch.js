@@ -7,7 +7,7 @@ module.exports = {
         tasks: ['newer:jadephp'],
     },
     css: {
-        files: ['sources/sass/**/*.sass'],
+        files: ['sources/sass/**/*.scss'],
         tasks: ['sass'],
     },
     //alternative preprocessor
