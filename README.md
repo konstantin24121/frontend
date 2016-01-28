@@ -95,6 +95,7 @@
 - [Cmq](https://github.com/buildingblocks/grunt-combine-media-queries) для сборки медиазапросов
 - [Cssmin](https://github.com/gruntjs/grunt-contrib-cssmin) для минификации CSS
 - [Favicons](https://github.com/gleero/grunt-favicons) для создания favicon'ок
+- [FileCreator](https://github.com/travis-hilterbrand/grunt-file-creator) для создания файлов
 - [FontLoader](https://github.com/konstantin24121/grunt-font-loader) для загрузки шрифтов с ftp
 - [Coffee](https://github.com/gruntjs/grunt-contrib-coffee) для компиляции CoffeeScript в JS
 - [Uglify](https://github.com/gruntjs/grunt-contrib-uglify) для минификации JS файлов

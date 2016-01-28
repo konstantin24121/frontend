@@ -46,6 +46,7 @@ build:
    - 'imagemin:sprite'
    - 'svgmin'
    - 'copy:yiiB'
+   - 'file-creator'
 buildcon:
    - 'bower'
    - 'shell:installBower'
@@ -62,3 +63,4 @@ buildcon:
    - 'concurrent:big'
    - 'svgmin'
    - 'copy:yiiB'
+   - 'file-creator'
