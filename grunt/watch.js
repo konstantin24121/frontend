@@ -7,7 +7,7 @@ module.exports = {
         tasks: ['newer:jadephp'],
     },
     css: {
-        files: ['sources/sass/**/*.scss'],
+        files: ['sources/sass/**/*.sass'],
         tasks: ['sass'],
     },
     //alternative preprocessor
@@ -36,8 +36,12 @@ module.exports = {
         tasks: ['newer:retinafy','newer:imagemin:sprite', 'sprite'],
     },
     svg: {
-        files: ['sources/vector/*.{svg}'],
+        files: ['sources/vector/*.svg'],
         tasks: ['newer:svgmin'],
+    },
+    yii: {
+        files: ['sources/*.php'],
+        tasks: ['newer:copy:yiiB'],
     },
     
     

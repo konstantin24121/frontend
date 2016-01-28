@@ -1,13 +1,8 @@
 :php
 	$mainAssets = $this->mainAssets;
-	if(YII_DEBUG){
-		Yii::app()->getClientScript()->registerScriptFile($mainAssets . '/js/layout/header.js');
-	}else{
-		Yii::app()->getClientScript()->registerScriptFile($mainAssets . '/js/layout/header.min.js');
-	}
 header#header
-	div.limiter
-		div.logo
+	.limiter
+		.logo
 			:php
 				echo CHtml::link(
 					$this->getSvg($mainAssets),

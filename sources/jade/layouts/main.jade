@@ -5,11 +5,9 @@ body
 	:php
 		$this->renderPartial('//layouts/parts/_header');
 	
-	div.die-container
-		div.limiter
-			article.contentner
-				=$content
+	.container
+		.limiter
+			!=$content
 	:php
 		$this->renderPartial('//layouts/parts/_footer')
-	div.notifications.bottom-left#notifications
 </html>

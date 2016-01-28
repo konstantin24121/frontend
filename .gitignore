@@ -6,3 +6,5 @@
 /views/*
 .ftpauth
 wpt-results.json
+/*.php
+.htaccess

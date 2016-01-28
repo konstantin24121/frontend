@@ -1,0 +1,34 @@
+.site-error{
+	text-align: center;
+	&__code {
+		font-size: 12rem;
+	}
+	&__title {
+		text-transform: uppercase;
+		font-size: 2rem;
+		font-weight: 600;
+	}
+	&__description {
+		display: inline-block;
+		font-size: 1.4rem;
+		padding: 2rem 0;
+		border-bottom: 1px solid transparentize(black, 0.8);
+		line-height: 2;
+	}
+	&__links {
+		margin-top: 3rem;
+	}
+	&__link {
+		position: relative;
+		padding: 1rem 2rem;
+		display: inline-block;
+		background-color: $c_brown_1;
+		border-bottom: 3px solid $c_red_1;
+		color: white;
+		margin: 0 1rem;
+		text-transform: uppercase;
+		@include events {
+			color: white;
+		}
+	}
+}

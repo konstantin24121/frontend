@@ -4,7 +4,7 @@ module.exports =
 		files: [{
 			expand: true,
 			cwd: 'sources/sass/views/',
-			src: ['*.scss'],
+			src: ['*.sass'],
 			dest: 'web/css/',
 			ext: '.css'
 		}]
