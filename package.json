@@ -1,6 +1,6 @@
 {
   "name": "viikset",
-  "version": "0.2.6",
+  "version": "2.5.5",
   "description": "VinstonWolf Grunt",
   "domain": "five.dcmr.ru",
   "main": "index.js",
@@ -35,8 +35,10 @@
     "grunt-shell": "^1.1.2",
     "grunt-spritesmith": "^5.0.0",
     "grunt-svgmin": "^3.1.0",
+    "imagemin": "^4.0.0",
     "load-grunt-config": "^0.17.2",
-    "time-grunt": "^1.2.1"
+    "time-grunt": "^1.2.1",
+    "vinyl-fs": "^2.2.1"
   },
   "compileDependencies": {
     "grunt-contrib-watch": "^0.6.1",
@@ -44,12 +46,13 @@
     "grunt-contrib-coffee": "^0.13.0",
     "grunt-font-loader": "^0.3.0",
     "grunt-retinafy": "^0.1.5",
+    "grunt-contrib-copy": "^0.8.2",
     "grunt-favicons": "gleero/grunt-favicons",
     "grunt-contrib-imagemin": "^1.0.0",
     "grunt-contrib-less": "^1.0.1",
     "grunt-sass": "^1.1.0-beta",
-    "grunt-svgmin": "^3.1.0",
     "grunt-spritesmith": "^5.0.0",
+    "grunt-svgmin": "^3.1.0",
     "grunt-newer": "^1.1.1"
   },
   "lightcompileDependencies": {
@@ -57,12 +60,14 @@
     "grunt-jade-php": "^0.1.0",
     "grunt-contrib-coffee": "^0.13.0",
     "grunt-sass": "^1.1.0-beta",
+    "grunt-contrib-copy": "^0.8.2",
     "grunt-newer": "^1.1.1"
   },
   "removeDependencies": {
     "grunt-contrib-compass": "^1.0.4",
     "grunt-notify": "^0.4.1",
     "grunt-periodic": "^1.0.0",
+    "grunt-contrib-less": "^1.1.0",
     "grunt-pagespeed": "~0.4.1"
   }
 }
