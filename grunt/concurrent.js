@@ -1,6 +1,6 @@
 module.exports = {
     big: {
-        tasks: ['favicons', 'font_loader:get', 'imagemin:sprite', 'imagemin:staticly'],
+        tasks: ['spritecreate', 'font_loader:get', 'minify', 'imagecreate'],
         options: {
             limit: 2
         }

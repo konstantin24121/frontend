@@ -10,3 +10,56 @@ svg{
 	max-width: 100%;
 	max-height: 100%;
 }
+
+
+//KABEMS
+//BLOCK
+.block{
+	//STYLES
+	
+	&::before{
+		//STYLES
+	}
+
+	//ADAPTABILITY
+	@include respond-to('xs') {
+		//STYLES
+	}
+	//MODIFACATOR
+	&._modificator{
+		//STYLES
+	}
+	&.is-concurent{
+		//STYLES
+	}
+	//ELLEMENT
+	&__ellement{
+		//STYLES
+
+		//Context
+		.block._modificator &{
+			//STYLES
+		}
+
+		&._element-modificator{
+			//STYLES
+		}
+
+		//STATE
+		&.is-concurent{
+			//STYLES
+		}
+	}
+
+	&__ment{
+		//STYLES
+		&-implement{
+			//STYLES
+		}
+		&-leroy-jenkins{
+			//STYLES
+		}
+	}
+
+}
+

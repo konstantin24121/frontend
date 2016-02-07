@@ -75,8 +75,8 @@ module.exports =
         cssTemplate: function (params) {
             var spriteClassName = 'se';
             var result = '.'+spriteClassName+' {\n\tdisplay: inline-block;\n\tbackground-image: url('+params.items[0].image+');\n\tbackground-repeat: no-repeat;\n\twidth: ' + params.items[0].px.width + ';\n\t' +
-                    'height: ' + params.items[0].px.height + ';' +'\n\tbackground-size:'+params.items[0].px.total_width+' '+params.items[0].px.total_height+';\n\t@media (min--moz-device-pixel-ratio: 1.3),(-o-min-device-pixel-ratio: 2.6/2),(-webkit-min-device-pixel-ratio: 1.3),(min-device-pixel-ratio: 1.3),(min-resolution: 1.3dppx) {\n'+
-                '\t\tbackground-image: url('+params.items[0].image.replace(/.png/g,"@2x.png")+');\n\t}\n}\n';
+                    'height: ' + params.items[0].px.height + ';' +'\n\tbackground-size:'+params.items[0].px.total_width+' '+params.items[0].px.total_height+';}\n@media (min--moz-device-pixel-ratio: 1.3),(-o-min-device-pixel-ratio: 2.6/2),(-webkit-min-device-pixel-ratio: 1.3),(min-device-pixel-ratio: 1.3),(min-resolution: 1.3dppx) {\n'+
+                '\t'+'.'+spriteClassName+'{\t\tbackground-image: url('+params.items[0].image.replace(/.png/g,"@2x.png")+');\n\t}\n}\n';
             for (var i = 0, ii = params.items.length; i < ii; i += 1) {
             	if(!/@2x/.test(params.items[i].name))
 	                result += '.'+spriteClassName+'-' + params.items[i].name + '{' +

@@ -1,6 +1,6 @@
 {
   "name": "viikset",
-  "version": "2.5.5",
+  "version": "2.6.0",
   "description": "VinstonWolf Grunt",
   "domain": "five.dcmr.ru",
   "main": "index.js",
@@ -36,6 +36,11 @@
     "grunt-spritesmith": "^5.0.0",
     "grunt-svgmin": "^3.1.0",
     "imagemin": "^4.0.0",
+    "imagemin-advpng": "^3.1.0",
+    "imagemin-gifsicle": "^4.2.0",
+    "imagemin-mozjpeg": "^5.1.0",
+    "imagemin-pngcrush": "^4.1.0",
+    "imagemin-pngquant": "^4.2.0",
     "load-grunt-config": "^0.17.2",
     "time-grunt": "^1.2.1",
     "vinyl-fs": "^2.2.1"

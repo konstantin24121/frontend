@@ -14,7 +14,7 @@ module.exports = {
             flatten: true,
             expand: true,
             cwd: 'sources/',
-            src: ['images/*.{png,gif,jpg}'],
+            src: ['images/**/*.{png,jpg}'],
             dest: 'web/img'
         }],
     },
@@ -32,7 +32,7 @@ module.exports = {
         files: [{
             expand: true,
             cwd: 'sources/',
-            src: ['icons/**/*.{png,gif,jpg}'],
+            src: ['icons/**/*.{png,jpg}'],
             dest: '.temp/'
         }]
     }
