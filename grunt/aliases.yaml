@@ -14,7 +14,7 @@ minify:
    - 'newer:imagemin:dynamicGif'
    - 'svgmin'
 deploy: 
-   - 'ftp_push'
+   - 'newer:ftp_push'
 imagecreate: 
    - 'newer:retinafy:images'
    - 'newer:imagemin:staticly'
