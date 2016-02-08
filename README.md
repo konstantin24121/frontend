@@ -14,6 +14,7 @@
 | Билд скрипт                                                                                                    | grunt build                     |
 | Билд скрипт для многоядерных (4 ядра), с паралелзьмом                                                          | grunt buildcon                  |
 | Тест сайта на скорость и оптимальность                                                                         | grunt speedtest                 |
+| Отправка темы на сервер                                                                                        | grunt deploy                    |
 | Запуск watch в обычном режиме, для мощных машин                                                                | grunt watch --mode=compile      |
 | Запуск watch в режиме экономии task'ов. В файле watch оставть только,php css js задания, остальное закоментить | grunt watch --mode=lightcompile |
 | Установка новых bower'ов, где {package} имя пакета                                                             | grunt shell:bi:{package}        |
@@ -22,7 +23,7 @@
 А для всего остального есть MasterCard
 
 
-#Как сделать пакеты нормальными или если что-то пошло не так#
+#Как сделать пакеты нормальными или если что-то пошло не так или операция Н#
 
 ##Bourbone##
 
@@ -37,9 +38,13 @@
 
 ##Page speed##
 
-Чтобы получать инфу об оптимизации переписать domain в файле package.json. И не забыть установить глобально psi 
+Чтобы получать инфу об оптимизации переписать project.domain в файле package.json. И не забыть установить глобально psi 
   
 `npm install --g psi`
+
+##Ftp_push##
+
+Обязательно надо настроить параметры проекта в package.json (массив project). В случае если деплой происходит не на нашем сервере то необходимо заменить путь, в файле Gruntfile.js
 
 
 ##Perfbudget##
@@ -96,6 +101,7 @@
 - [Cssmin](https://github.com/gruntjs/grunt-contrib-cssmin) для минификации CSS
 - [Favicons](https://github.com/gleero/grunt-favicons) для создания favicon'ок
 - [FileCreator](https://github.com/travis-hilterbrand/grunt-file-creator) для создания файлов
+- [FtpPush](https://github.com/Robert-W/grunt-ftp-push) для деплоя
 - [FontLoader](https://github.com/konstantin24121/grunt-font-loader) для загрузки шрифтов с ftp
 - [Coffee](https://github.com/gruntjs/grunt-contrib-coffee) для компиляции CoffeeScript в JS
 - [Uglify](https://github.com/gruntjs/grunt-contrib-uglify) для минификации JS файлов
@@ -111,7 +117,7 @@
 - [Svgmin](https://github.com/sindresorhus/grunt-svgmin) для минификации векторной графики
 
 ###Что есть, но пока что не используется###
-- [FtpPush](https://github.com/Robert-W/grunt-ftp-push) будет использоваться для деплой-скрипта
+
 - [Сoncurrent](https://github.com/sindresorhus/grunt-concurrent) Время билда должно быть весьма велико чтобы что то параллелить, сейчас такой надобности нету, наоборот рпоигрыш наблюдается. На многоядерных можно пользовать.
 
 ###Depricated###
