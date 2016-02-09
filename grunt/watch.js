@@ -1,20 +1,37 @@
-module.exports = {
+module.exports = global['light']
+?{
     options: {
         livereload: true,
     },
     php: {
         files: ['sources/jade/**/*.jade'],
-        tasks: ['newer:jadephp'],
+        tasks: global['live']?['newer:jadephp', 'newer:ftp_push:php']:['newer:jadephp'],
     },
     css: {
         files: ['sources/sass/**/*.scss'],
-        tasks: ['sass'],
+        tasks: global['live']?['sass','newer:ftp_push:css']:['sass'],
     },
-    //alternative preprocessor
-    // css_alt: {
-    //     files: ['sources/less/**/*.less'],
-    //     tasks: ['less'],
-    // },
+    js: {
+        files: ['sources/coffee/**/*.coffee'],
+        tasks: global['live']?['newer:coffee','newer:ftp_push:js']:['newer:coffee'],
+    },
+}
+:{
+	options: {
+        livereload: true,
+    },
+    php: {
+        files: ['sources/jade/**/*.jade'],
+        tasks: global['live']?['newer:jadephp', 'newer:ftp_push:php']:['newer:jadephp'],
+    },
+    css: {
+        files: ['sources/sass/**/*.scss'],
+        tasks: global['live']?['sass','newer:ftp_push:css']:['sass'],
+    },
+    js: {
+        files: ['sources/coffee/**/*.coffee'],
+        tasks: global['live']?['newer:coffee','newer:ftp_push:js']:['newer:coffee'],
+    },
     favicon: {
         files: ['sources/favicon.*'],
         tasks: ['favicons'],
@@ -23,27 +40,30 @@ module.exports = {
         files: ['sources/fonts.yml'],
         tasks: ['font_loader:get'],
     },
-    js: {
-        files: ['sources/coffee/**/*.coffee'],
-        tasks: ['newer:coffee'],
-    },
     image: {
         files: ['sources/images/*.{png,gif,jpg}'],
-        tasks: ['newer:retinafy','newer:imagemin:staticly'],
+        tasks: global['live']?['newer:retinafy','newer:imagemin:staticly','newer:ftp_push:image']:['newer:retinafy','newer:imagemin:staticly'],
     },
     sprites: {
         files: ['sources/icons/*.{png,gif,jpg}'],
-        tasks: ['newer:retinafy','newer:imagemin:sprite', 'sprite'],
+        tasks: global['live']?['newer:retinafy','newer:imagemin:sprite', 'sprite','newer:ftp_push:sprites']:['newer:retinafy','newer:imagemin:sprite', 'sprite'],
     },
     svg: {
         files: ['sources/vector/*.svg'],
-        tasks: ['newer:svgmin'],
+        tasks: global['live']?['newer:svgmin','newer:ftp_push:svg']:['newer:svgmin'],
     },
     yii: {
         files: ['sources/*.php'],
-        tasks: ['newer:copy:yiiB'],
+        tasks: global['live']?['newer:copy:yiiB','newer:ftp_push:yii']:['newer:copy:yiiB'],
     },
-    
+}
+
+
+    //alternative preprocessor
+    // css_alt: {
+    //     files: ['sources/less/**/*.less'],
+    //     tasks: ['less'],
+    // },
     
     // configFiles: {
     //     files: ['web/svg/**/*.svg'],
@@ -51,4 +71,3 @@ module.exports = {
     //         reload: true
     //     }
     // }
-}

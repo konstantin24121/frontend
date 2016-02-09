@@ -3,7 +3,14 @@ var path = require("path");
 
 module.exports = function(grunt) {
 	var mode = grunt.option("mode") || 'dev';
+	global['live'] = grunt.option("live") || false;
+	global['light'] = grunt.option("light") || false;
 	
+	if (global['light']) mode += '-light';
+	if (global['live']) mode += '-live';
+	
+	grunt.log.ok('Run with '+mode+' dependencies.');
+
 	//Get path name
 	path = process.cwd().split(path.sep);
 
