@@ -71,10 +71,10 @@ c.on('ready', function() {
 
 //Настройка закачки
 var load = {
-	host: '88.198.10.230',
-	user: 'mak',
-	password: 'gt[frjlth',
-	dest: '/www/five.dcmr.ru/themes/frontend/',
+	host: 'ip',
+	user: 'name',
+	password: 'pass',
+	dest: '/www/',
 	root: '',
 	pathes: [
 		'.bowerrc',
