@@ -1,6 +1,6 @@
-#content
-  .left.column
-    %h2 Welcome to our site!
-    %p= print_information
-  .right.column
-    = render :partial => "sidebar"
+%ul#users
+	- foreach($users as $user):
+		%li.user
+		= $user->getName()
+		Email: #{$user->getEmail()}
+		%a(href=$user->getUrl()) Home page

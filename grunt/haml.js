@@ -1,6 +1,9 @@
 module.exports = 
  {
 	compile: {
+		options: {
+			enableDynamicAttributes: false,
+		},
 		files: [{
 			expand: true,
 			cwd: 'sources/haml/',
