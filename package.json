@@ -1,6 +1,6 @@
 {
   "name": "viikset",
-  "version": "2.8.0",
+  "version": "3.0.1",
   "description": "VinstonWolf Grunt",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,11 @@
     "domain": "five.dcmr.ru",
     "host": "88.198.10.230",
     "user": "mak"
+  },
+  "repository" :
+  { 
+  	"type" : "git",
+  	"url" : "https://github.com/konstantin24121/frontend"
   },
   "dependencies": {},
   "devDependencies": {
