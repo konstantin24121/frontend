@@ -2,8 +2,11 @@ default:
    - 'shell:def'
 scompile:
    - 'sass'
-   - 'jadephp'
+   - 'haml'
+   - 'js'
+js: 
    - 'coffee'
+   - 'webpack'
 minify:
    - 'clean:minified'
    - 'cmq'

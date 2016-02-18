@@ -1,6 +1,6 @@
 {
   "name": "viikset",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "description": "VinstonWolf Grunt",
   "main": "index.js",
   "scripts": {
@@ -13,10 +13,9 @@
     "host": "88.198.10.230",
     "user": "mak"
   },
-  "repository" :
-  { 
-  	"type" : "git",
-  	"url" : "https://github.com/konstantin24121/frontend"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/konstantin24121/frontend"
   },
   "dependencies": {},
   "devDependencies": {
@@ -45,6 +44,7 @@
     "grunt-shell": "^1.1.2",
     "grunt-spritesmith": "^5.0.0",
     "grunt-svgmin": "^3.1.0",
+    "grunt-webpack": "^1.0.11",
     "imagemin": "^4.0.0",
     "imagemin-advpng": "^3.1.0",
     "imagemin-gifsicle": "^4.2.0",
@@ -53,65 +53,8 @@
     "imagemin-pngquant": "^4.2.0",
     "load-grunt-config": "^0.17.2",
     "time-grunt": "^1.2.1",
-    "vinyl-fs": "^2.2.1"
-  },
-  "compileDependencies": {
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-jade-php": "^0.1.0",
-    "grunt-contrib-coffee": "^0.13.0",
-    "grunt-font-loader": "^0.3.0",
-    "grunt-retinafy": "^0.1.5",
-    "grunt-contrib-copy": "^0.8.2",
-    "grunt-favicons": "gleero/grunt-favicons",
-    "grunt-contrib-imagemin": "^1.0.0",
-    "grunt-contrib-less": "^1.0.1",
-    "grunt-sass": "^1.1.0-beta",
-    "grunt-spritesmith": "^5.0.0",
-    "grunt-svgmin": "^3.1.0",
-    "grunt-newer": "^1.1.1"
-  },
-  "compile-liveDependencies": {
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-jade-php": "^0.1.0",
-    "grunt-contrib-coffee": "^0.13.0",
-    "grunt-font-loader": "^0.3.0",
-    "grunt-retinafy": "^0.1.5",
-    "grunt-contrib-copy": "^0.8.2",
-    "grunt-favicons": "gleero/grunt-favicons",
-    "grunt-contrib-imagemin": "^1.0.0",
-    "grunt-contrib-less": "^1.0.1",
-    "grunt-sass": "^1.1.0-beta",
-    "grunt-spritesmith": "^5.0.0",
-    "grunt-ftp-push": "^0.3.6",
-    "grunt-svgmin": "^3.1.0",
-    "grunt-newer": "^1.1.1"
-  },
-  "compile-lightDependencies": {
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-jade-php": "^0.1.0",
-    "grunt-contrib-coffee": "^0.13.0",
-    "grunt-sass": "^1.1.0-beta",
-    "grunt-contrib-copy": "^0.8.2",
-    "grunt-newer": "^1.1.1"
-  },
-  "compile-light-liveDependencies": {
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-jade-php": "^0.1.0",
-    "grunt-contrib-coffee": "^0.13.0",
-    "grunt-sass": "^1.1.0-beta",
-    "grunt-contrib-copy": "^0.8.2",
-    "grunt-ftp-push": "^0.3.6",
-    "grunt-newer": "^1.1.1"
-  },
-  "deployDependencies": {
-    "grunt-ftp-push": "^0.3.6",
-    "grunt-newer": "^1.1.1"
-  },
-  "removeDependencies": {
-    "grunt-contrib-compass": "^1.0.4",
-    "grunt-notify": "^0.4.1",
-    "grunt-periodic": "^1.0.0",
-    "grunt-contrib-less": "^1.1.0",
-    "grunt-pagespeed": "~0.4.1"
+    "vinyl-fs": "^2.2.1",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1"
   }
 }

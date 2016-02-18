@@ -10,6 +10,7 @@
 |----------------------------------------------------------------------------------------------------------------|---------------------------------|
 | Скачивание всех ресурсов темы. Необходим файл с сервера load.js                                                | node load                       |
 | Компиляция статики, выполнение всех заданий watch один раз. довольно бесполезно                                | grunt scompile                  |
+| Компилирует js                                                                                                 | grunt js                        |
 | Минимизация всего и вся                                                                                        | grunt minify                    |
 | Создание изображений и минификация                                                                             | grunt imagecreate               |
 | Создание спрайтов и минификация                                                                                | grunt spritecreate              |
@@ -117,9 +118,8 @@
 - NodeLoad - скрипт настроеный на скачку всего необходимого внутри темы, для развертки
 - [Bower task](https://github.com/yatskevich/grunt-bower-task) для установки bower-пакетов 
 - [Shell](https://github.com/sindresorhus/grunt-shell) для работы с консолью, и консольными командами
-- [jadePhp](https://github.com/viniwrubleski/jade-php) для компиляции Jade в Php
+- [Haml](https://github.com/alexluke/grunt-haml-php) для компиляции Haml в Php
 - [SASS](https://github.com/gruntjs/grunt-contrib-sass) для компиляции SASS в CSS
-- [Less](https://github.com/gruntjs/grunt-contrib-less) для компиляции LESS в CSS
 - [Clean](https://github.com/gruntjs/grunt-contrib-clean) для удаления файлов
 - [Cmq](https://github.com/buildingblocks/grunt-combine-media-queries) для сборки медиазапросов
 - [Cssmin](https://github.com/gruntjs/grunt-contrib-cssmin) для минификации CSS
@@ -128,6 +128,7 @@
 - [FtpPush](https://github.com/Robert-W/grunt-ftp-push) для деплоя
 - [FontLoader](https://github.com/konstantin24121/grunt-font-loader) для загрузки шрифтов с ftp
 - [Coffee](https://github.com/gruntjs/grunt-contrib-coffee) для компиляции CoffeeScript в JS
+- [Webpack](https://github.com/webpack/grunt-webpack) для [Webpack](http://webpack.github.io/) сборки JS
 - [Uglify](https://github.com/gruntjs/grunt-contrib-uglify) для минификации JS файлов
 - [Retinafy](https://github.com/JrSchild/grunt-retinafy) для создания ретина-изображений
 - [Spritesmith](https://github.com/Ensighten/grunt-spritesmith) для создания спрайтов и стилей для них
@@ -139,6 +140,11 @@
 - [LoadConfig](https://github.com/firstandthird/load-grunt-config) для разбиения настроек тасков по файлам
 - [Time](https://github.com/sindresorhus/time-grunt) время выполнения заданий
 - [Svgmin](https://github.com/sindresorhus/grunt-svgmin) для минификации векторной графики
+
+###Alternative
+- [jadePhp](https://github.com/viniwrubleski/jade-php) для компиляции Jade в Php
+- [Less](https://github.com/gruntjs/grunt-contrib-less) для компиляции LESS в CSS
+
 
 ###Что есть, но пока что не используется###
 
