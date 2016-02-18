@@ -4,3 +4,27 @@
 		= $user->getName()
 		Email: #{$user->getEmail()}
 		%a(href=$user->getUrl()) Home page
+		%section(data-huidata="#{$user->getEmail()} her") Home stage
+		%section(data-huidata=" #{5 == 4 ? $user->getEmail(): $user->getBitches() } her") Home stage
+
+	:php
+		Yii::app()->createUrl('store/store/huistore', ['zad' => $zad])
+		if (YII_DEBUG === 'zad') {
+			do someShit();
+		}
+	:css
+		.body{
+			background-color: #fff;
+		}
+	:javascript
+		$(document).ready(function(){
+			alert("something")
+		})
+<h1> жопа </h1>
+="задница"
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut #{$butt} et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
