@@ -4,8 +4,8 @@ module.exports = global['light']
         livereload: true,
     },
     php: {
-        files: ['sources/jade/**/*.jade'],
-        tasks: global['live']?['newer:jadephp', 'newer:ftp_push:php']:['newer:jadephp'],
+        files: ['sources/haml/**/*.haml'],
+        tasks: global['live']?['newer:haml', 'newer:ftp_push:php']:['newer:haml'],
     },
     css: {
         files: ['sources/sass/**/*.scss'],
@@ -13,7 +13,7 @@ module.exports = global['light']
     },
     js: {
         files: ['sources/coffee/**/*.coffee'],
-        tasks: global['live']?['newer:coffee','newer:ftp_push:js']:['newer:coffee'],
+        tasks: global['live']?['newer:coffee', 'webpack','newer:ftp_push:js']:['newer:coffee', 'webpack'],
     },
 }
 :{
@@ -21,8 +21,8 @@ module.exports = global['light']
         livereload: true,
     },
     php: {
-        files: ['sources/jade/**/*.jade'],
-        tasks: global['live']?['newer:jadephp', 'newer:ftp_push:php']:['newer:jadephp'],
+        files: ['sources/haml/**/*.haml'],
+        tasks: global['live']?['newer:haml', 'newer:ftp_push:php']:['newer:haml'],
     },
     css: {
         files: ['sources/sass/**/*.scss'],
@@ -30,7 +30,7 @@ module.exports = global['light']
     },
     js: {
         files: ['sources/coffee/**/*.coffee'],
-        tasks: global['live']?['newer:coffee','newer:ftp_push:js']:['newer:coffee'],
+        tasks: global['live']?['newer:coffee', 'webpack','newer:ftp_push:js']:['newer:coffee', 'webpack'],
     },
     favicon: {
         files: ['sources/favicon.*'],
@@ -63,6 +63,10 @@ module.exports = global['light']
     // css_alt: {
     //     files: ['sources/less/**/*.less'],
     //     tasks: ['less'],
+    // },
+    // php: {
+    //     files: ['sources/jade/**/*.jade'],
+    //     tasks: ['newer:jadephp'],
     // },
     
     // configFiles: {

@@ -3,9 +3,9 @@ module.exports =
     compile:{
     	files:[{
     		expand: true,
-			cwd: 'sources/coffee/views',
-			src: ['*.coffee'],
-			dest: 'web/js/',
+			cwd: 'sources/coffee/',
+			src: ['**/*.coffee'],
+			dest: '.temp/js/',
 			ext: '.js'
     	}],
 	    options: {

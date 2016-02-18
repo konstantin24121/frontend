@@ -25,7 +25,7 @@ module.exports = function(grunt) {
     require('load-grunt-config')(grunt,{
         loadGruntTasks: {
             pattern: 'grunt-*',
-            config: require('./package.json'),
+            config: require('./grunt/_modes.json'),
             scope: mode+'Dependencies'
         },
     });
