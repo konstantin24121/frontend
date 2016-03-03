@@ -17,6 +17,9 @@
     "type": "git",
     "url": "https://github.com/konstantin24121/frontend"
   },
+  "engines": {
+    "node": "<4.3.2"
+  },
   "dependencies": {},
   "devDependencies": {
     "grunt": "^0.4.5",
@@ -53,7 +56,7 @@
     "imagemin-pngquant": "^4.2.0",
     "load-grunt-config": "^0.17.2",
     "time-grunt": "^1.2.1",
-    "vinyl-fs": "^2.2.1",
+    "vinyl-fs": "2.2.1",
     "webpack": "^1.12.13",
     "webpack-dev-server": "^1.14.1"
   }
