@@ -6,22 +6,24 @@ var gifsicle = require('imagemin-gifsicle');
 
 module.exports = {
     dynamic: {
-    	options:{
-    		optimizationLevel: 2,
+        options:{
+            optimizationLevel: 7,
             progressive: true,
             use: [
                 pngquant({speed:1}), 
                 pngcrush({reduce: true}), 
                 advpng({optimizationLevel:4}), 
-                mozjpeg(), 
+                mozjpeg({
+                    quality: 100, 
+                    progressive: true,
+                }), 
                 gifsicle({interlaced: true})
             ]
-    	},
+        },
         files: [{
-        	flatten: true,
             expand: true, 
-            cwd: 'sources/',
-            src: ['images/*.{png,gif,jpg}'],
+            cwd: 'sources/images/',
+            src: ['**/*.{png,gif,jpg}'],
             dest: 'web/img'
         }]
     },
@@ -32,45 +34,47 @@ module.exports = {
             use: [gifsicle({interlaced: true})]
         },
         files: [{
-            flatten: true,
             expand: true, 
-            cwd: 'sources/',
-            src: ['images/*.gif'],
+            cwd: 'sources/images/',
+            src: ['**/*.gif'],
             dest: 'web/img'
         }]
     },
     staticly:{
-    	options:{
-    		optimizationLevel: 2,
+        options:{
+            optimizationLevel: 2,
             progressive: true,
             use: [
                 pngquant({speed:1}), 
                 pngcrush({reduce: true}), 
                 advpng({optimizationLevel:4}), 
-                mozjpeg(), 
+                mozjpeg({
+                    quality: 100, 
+                    progressive: true,
+                }), 
                 gifsicle({interlaced: true})
             ]
-    	},
+        },
         files: [{
-        	flatten: true,
-            expand: true, 
-            src: ['web/img/*.{png,gif,jpg}'],
+            expand: true,
+            cwd: 'web/img/', 
+            src: ['**/*.{png,gif,jpg}'],
             dest: 'web/img'
         }]
     },
     sprite: {
-    	options:{
-    		optimizationLevel: 2,
+        options:{
+            optimizationLevel: 2,
             progressive: true,
             use: [
-                pngquant({speed:1}), 
-                pngcrush({reduce: true}), 
-                advpng({optimizationLevel:4}), 
-                mozjpeg()
+                // pngquant({speed:1}), 
+                // pngcrush({reduce: true}), 
+                // advpng({optimizationLevel:4}), 
+                // mozjpeg()
             ]
-    	},
+        },
         files: [{
-        	flatten: true,
+            flatten: true,
             expand: true, 
             src: ['web/sprites/*.{png,jpg}'],
             dest: 'web/sprites'
