@@ -16,6 +16,7 @@
 | Создание изображений и минификация                                                                             | grunt imagecreate               |
 | Создание спрайтов и минификация                                                                                | grunt spritecreate              |
 | Билд скрипт                                                                                                    | grunt build                     |
+| Пересобрать всю муру                                                                                           | grunt rebuild                   |
 | Билд скрипт для многоядерных (4 ядра), с паралелзьмом                                                          | grunt buildcon                  |
 | Тест сайта на скорость и оптимальность                                                                         | grunt speedtest                 |
 | Отправка темы на сервер                                                                                        | grunt deploy                    |
@@ -83,7 +84,7 @@
 
 ##Bower через grunt##
 
-Напоминаю что этот плагин и команды устанавливают пакеты в папку web, пакеты для developa ставятся по классической схеме через bower
+Напоминаю, что этот плагин и команды устанавливают пакеты в папку web, пакеты для developa ставятся по классической схеме через bower
 
 
 > ##Depricatнутые##
@@ -128,7 +129,6 @@
 - [FileCreator](https://github.com/travis-hilterbrand/grunt-file-creator) для создания файлов
 - [FtpPush](https://github.com/Robert-W/grunt-ftp-push) для деплоя
 - [FontLoader](https://github.com/konstantin24121/grunt-font-loader) для загрузки шрифтов с ftp
-- [Coffee](https://github.com/gruntjs/grunt-contrib-coffee) для компиляции CoffeeScript в JS
 - [Webpack](https://github.com/webpack/grunt-webpack) для [Webpack](http://webpack.github.io/) сборки JS
 - [Uglify](https://github.com/gruntjs/grunt-contrib-uglify) для минификации JS файлов
 - [Retinafy](https://github.com/JrSchild/grunt-retinafy) для создания ретина-изображений
@@ -154,6 +154,7 @@
 ###Depricated###
 Либо не используется, либо пока не найдено приминения
 
+- [Coffee](https://github.com/gruntjs/grunt-contrib-coffee) компилируется Webpack'ом
 - [Compass](https://github.com/gruntjs/grunt-contrib-compass) старый компилятор и фрейм Compass для SASS. Исключен из за высокого времени на компиляцию
 - [Notify](https://github.com/dylang/grunt-notify) подымает сообщения, с помощью Growl'a. Пищало, лишнее время на загрузку таска. Не нужно, если держать окно консоли поверх остальных
 - [Periodic](https://github.com/bealearts/grunt-periodic) периодический запуск заданий, оказалось не то что надо, так как занимается лишь повторением задач, в случае если они не были запущены ни разу за указанный период. Практического применения не найдено

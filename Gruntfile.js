@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 	if (global['live']) mode += '-live';
 	
 	grunt.log.ok('Run with '+mode+' dependencies.');
-
+	
 	//Get path name
 	path = process.cwd().split(path.sep);
 
@@ -26,7 +26,12 @@ module.exports = function(grunt) {
         loadGruntTasks: {
             pattern: 'grunt-*',
             config: require('./grunt/_modes.json'),
-            scope: mode+'Dependencies'
+            scope: mode+'Dependencies',
+            jitGrunt: {
+            	staticMappings:{
+            		webpackStats: './grunt/webpackStats.js'
+            	}
+            },
         },
     });
 }

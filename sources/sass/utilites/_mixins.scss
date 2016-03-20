@@ -52,3 +52,9 @@
 	}
 }
 
+///Хуясь, clip-path
+///Clip-path, mother fucker
+@mixin clip-path($wat){
+	clip-path: $wat;
+	-webkit-clip-path: $wat;
+}

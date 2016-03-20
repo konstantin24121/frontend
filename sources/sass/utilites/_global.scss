@@ -1,8 +1,7 @@
 //Colors
 //////////
-$c_grey_1: #FFFFFF;
-$c_grey_0: #000000;
-$c_orange_1: #f34d01;
+$c_gray_1: #FFFFFF;
+$c_gray_0: #000000;
 
 //////////
 //Dimentions
@@ -28,7 +27,8 @@ $f_Rob :"Roboto";
 //////////
 //Other
 //////////
-$b_at: 0.3s;        //base animation time
+$b_td: 0.3s;        //base transition duration
+$b_tf: cubic-bezier(0.23, 1, 0.32, 1);        //base transition funtion
 $img:'../img/';     //path to img
 $fonts:'../fonts/'; //path to fonts
 $svg:'../svg/';	    //path to svg

@@ -13,7 +13,7 @@ module.exports = global['light']
     },
     js: {
         files: ['sources/coffee/**/*.coffee'],
-        tasks: global['live']?['newer:coffee', 'webpack','newer:ftp_push:js']:['newer:coffee', 'webpack'],
+        tasks: global['live']?['webpack', 'webpackStats', 'newer:ftp_push:js']:['webpack', 'webpackStats'],
     },
 }
 :{
@@ -30,7 +30,7 @@ module.exports = global['light']
     },
     js: {
         files: ['sources/coffee/**/*.coffee'],
-        tasks: global['live']?['newer:coffee', 'webpack','newer:ftp_push:js']:['newer:coffee', 'webpack'],
+        tasks: global['live']?['webpack', 'webpackStats', 'newer:ftp_push:js']:['webpack', 'webpackStats'],
     },
     favicon: {
         files: ['sources/favicon.*'],

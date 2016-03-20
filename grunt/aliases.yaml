@@ -5,8 +5,8 @@ scompile:
    - 'haml'
    - 'js'
 js: 
-   - 'coffee'
    - 'webpack'
+   - 'webpackStats'
 minify:
    - 'clean:minified'
    - 'cmq'
@@ -39,7 +39,6 @@ build:
    - 'retinafy:icons'
    - 'sprite'
    - 'minify'
-   - 'copy:yiiB'
    - 'file-creator'
 buildcon:
    - 'bower'
@@ -55,3 +54,10 @@ speedtest:
    - 'shell:speedDesktope'
    - 'shell:speedMobile'
    - 'perfbudget'
+rebuild: 
+   - clean:temp
+   - clean:bower
+   - clean:web
+   - clean:view
+   - clean:htaccess
+   - build

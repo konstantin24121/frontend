@@ -5,4 +5,9 @@ module.exports =
 	    js: ["web/js/**/*.min.js"]
 	},
 	temp: '.temp',
+	bower: 'bower',
+	web: 'web',
+	view: 'views',
+	htaccess: '.htaccess',
+
 }
