@@ -82,6 +82,9 @@ var load = {
 		'Gruntfile.js',
 		'bower.json',
 		'package.json',
+		'package.php',
+		'bootstrap.php',
+		'DefaultThemeEvents.php',
 		'sources/',
 		'grunt/'
 	]

@@ -53,8 +53,11 @@ module.exports = global['light']
         tasks: global['live']?['newer:svgmin','newer:ftp_push:svg']:['newer:svgmin'],
     },
     yii: {
-        files: ['sources/*.php'],
-        tasks: global['live']?['newer:copy:yiiB','newer:ftp_push:yii']:['newer:copy:yiiB'],
+        files: ['*.php'],
+        tasks: global['live']?['newer:ftp_push:yii']:[],
+        options: {
+            reload: true
+        }
     },
 }
 

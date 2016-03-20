@@ -16,7 +16,9 @@ module.exports = {
                 ".bowerrc",
                 ".gitignore",
                 ".htaccess",
-                "*.php",
+                "package.php",
+                "bootstrap.php",
+                "DefaultThemeEvents.php",
                 "Gruntfile.js",
                 "package.json",
                 "bower.json",
@@ -75,7 +77,9 @@ module.exports = {
     	options: optionsArray,
         files: [{
             src: [  
-            	"*.php",
+            	"package.php",
+                "bootstrap.php",
+                "DefaultThemeEvents.php",
             ],
         }]
     }

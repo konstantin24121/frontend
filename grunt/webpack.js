@@ -1,19 +1,24 @@
 module.exports = 
 {
 	app:{
-		entry: "./.temp/js/app",
+		context: "./sources/coffee/",
+		entry: {
+			app: "./app",
+		},
 		output: {
-	        path: "web/js",
-	        filename: "app.js",
+	        path: "./web/js",
+	        filename: "[name].js",
+	        library: "[name]"
 	    },
 	    module: {
 	    	loaders: [
-		    	// {
-		    	// 	test: /\.js$/,
-		    	// 	loader: 'babel?presets[]=es2015'
-		    	// }
+		    	{ test: /\.coffee$/, loader: "coffee" },
+		    	{ test: /\.(coffee\.md|litcoffee)$/, loader: "coffee-loader?literate" }
 	    	]
-	    }
+	    },
+	    resolve: {
+			extensions: ["", ".web.coffee", ".web.js", ".coffee", ".js"]
+		}
 	}
 	
 }

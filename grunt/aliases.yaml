@@ -17,15 +17,12 @@ minify:
    - 'newer:imagemin:dynamicGif'
    - 'svgmin'
 deploy: 
-   - 'newer:ftp_push'
+   - 'newer:ftp_push:all'
+   - 'speedtest'
 imagecreate: 
    - 'newer:retinafy:images'
    - 'newer:imagemin:staticly'
    - 'newer:imagemin:dynamicGif'
-speedtest:
-   - 'shell:speedDesktope'
-   - 'shell:speedMobile'
-   - 'perfbudget'
 spritecreate:
    - 'retinafy:icons'
    - 'sprite'
@@ -41,7 +38,6 @@ build:
    - 'newer:retinafy:images'
    - 'retinafy:icons'
    - 'sprite'
-   - 'spritecreate'
    - 'minify'
    - 'copy:yiiB'
    - 'file-creator'
@@ -55,3 +51,7 @@ buildcon:
    - 'concurent:big'
    - 'copy:yiiB'
    - 'file-creator'
+speedtest:
+   - 'shell:speedDesktope'
+   - 'shell:speedMobile'
+   - 'perfbudget'
