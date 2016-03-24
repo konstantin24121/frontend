@@ -67,10 +67,14 @@ module.exports = {
             optimizationLevel: 2,
             progressive: true,
             use: [
-                // pngquant({speed:1}), 
-                // pngcrush({reduce: true}), 
-                // advpng({optimizationLevel:4}), 
-                // mozjpeg()
+                pngquant({speed:1}), 
+                pngcrush({reduce: true}), 
+                advpng({optimizationLevel:4}), 
+                mozjpeg({
+                    quality: 100, 
+                    progressive: true,
+                }), 
+                gifsicle({interlaced: true})
             ]
         },
         files: [{
