@@ -123,7 +123,7 @@
 - [Haml](https://github.com/alexluke/grunt-haml-php) для компиляции Haml в Php
 - [SASS](https://github.com/gruntjs/grunt-contrib-sass) для компиляции SASS в CSS
 - [Clean](https://github.com/gruntjs/grunt-contrib-clean) для удаления файлов
-- [Cmq](https://github.com/buildingblocks/grunt-combine-media-queries) для сборки медиазапросов
+- [Combine-mq](https://github.com/frontendfriends/grunt-combine-mq) для сборки медиазапросов
 - [Cssmin](https://github.com/gruntjs/grunt-contrib-cssmin) для минификации CSS
 - [Favicons](https://github.com/gleero/grunt-favicons) для создания favicon'ок
 - [FileCreator](https://github.com/travis-hilterbrand/grunt-file-creator) для создания файлов
